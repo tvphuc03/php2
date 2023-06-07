@@ -1,0 +1,220 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+.banner {
+  margin: 1rem 0;
+  width: 100%;
+  /* height: auto; */
+}
+.banner img {
+  min-height: 400px;
+}
+/* end css banner */
+
+/* css thương hiệu */
+.anh img {
+  margin: 0px 20p x;
+  width: 6rem;
+}
+/* end css thương hiệu */
+
+.section > h3 {
+  text-align: center;
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.section > h3 > a {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #fff;
+  border-radius: 0;
+  color: black;
+  text-decoration: none;
+}
+/* bỏ gạch chân product-name */
+.ten {
+  text-decoration: none;
+}
+
+/* xét product-name */
+.card-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+/*end xét product-name */
+
+/* giá */
+.card-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1c1c1c;
+  text-align: center;
+  width: 100%;
+}
+/* end giá */
+
+.section > h3 > hr {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  z-index: 0;
+  left: 0px;
+  background: black;
+  bottom: 10px;
+}
+
+
+/* css content */
+.section {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+
+.row1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+/* nut chi tiet */
+.chitiet {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.zone {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+.btn-them {
+  position: relative;
+  display: none;
+  font-size: 15px;
+  line-height: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid;
+  color: #1c1c1c;
+}
+
+.btn-them:hover {
+  color: #ffffff;
+}
+.btn-them:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(36, 32, 32);
+  transition: height 0.2s linear;
+  z-index: -1;
+}
+.btn-them:hover:before {
+  height: 100%;
+  width: 100%;
+}
+.product {
+  border: none;
+}
+.chitiet:hover .btn-them {
+  display: block;
+}
+/*end nut chi tiet */
+/* nut xem tất cả */
+.all {
+  width: 50%;
+  height: 40px;
+  margin: auto;
+  /* background-color: rgb(36, 32, 32); */
+}
+.btn-all {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px #cccc solid;
+  color: #1c1c1c;
+}
+.btn-all:hover {
+  color: #ffffff;
+}
+.btn-all:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100%;
+  width: 0;
+  background-color: rgb(36, 32, 32);
+  transition: width 0.25s linear;
+  z-index: -1;
+}
+.btn-all:hover:before {
+  height: 100%;
+  width: 100%;
+}
+/* end nut xem tất cả */
+/* tin tuc */
+.name-news {
+  width: 100%;
+  height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-news {
+  width: 100%;
+  /* height: 150px; */
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+/*end tin tuc */
+
+/* end css content */
+
+
